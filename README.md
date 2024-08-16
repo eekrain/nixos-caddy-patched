@@ -1,5 +1,7 @@
 # Patched Caddy NixOS flake
 
+This flake contains [cloudflare-dns](https://github.com/caddy-dns/cloudflare) and [cloudflare-ip](https://github.com/WeidiDeng/caddy-cloudflare-ip).
+
 Caddy's third-party plugins are installed by adding them as import in
 `cmd/caddy/main.go` and compiling caddy. This can be done either using
 the `xcaddy` utility as described [here](https://caddyserver.com/docs/build)
@@ -33,8 +35,8 @@ You should see the non-standard modules you added above this line at the end:
   Non-standard modules: n
 ```
 
-
 ## Cachix
+
 To make use of this repository's cachix binary cache, you can follow the
 instructions at this [link](https://app.cachix.org/cache/caddycf#pull),
 or add these to your nix configuration:
